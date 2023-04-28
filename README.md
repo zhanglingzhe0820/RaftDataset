@@ -1,4 +1,4 @@
-# Dataset of Raft-base Database Diagnosis
+# Dataset of Raft-based Database Diagnosis
 
 ## Overview
 
