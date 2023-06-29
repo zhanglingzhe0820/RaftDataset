@@ -8,7 +8,6 @@ The dataset download link:
 - leader: https://raft-diagnosis.oss-cn-beijing.aliyuncs.com/leader.zip
 - follower: https://raft-diagnosis.oss-cn-beijing.aliyuncs.com/follower.zip
 - database: https://raft-diagnosis.oss-cn-beijing.aliyuncs.com/database.zip
-- sample: https://raft-diagnosis.oss-cn-beijing.aliyuncs.com/sample.zip
 
 This dataset is mainly designed for root-cause analysis:
 
@@ -28,10 +27,9 @@ This dataset is mainly designed for root-cause analysis:
   - Too Much Background Tasks
   - Configuration Error
 
-
 ## How to use
 
-Use normal/leader/follower/database to train and test (sample is only selected out for empirical study). 
+Use normal/leader/follower/database to train and test. 
 
 ### normal
 
@@ -76,4 +74,8 @@ Modify database configuration and run, which means fault is injected throughout 
 - database3: Configuration2 (Ratio of write memory for rejecting insertion)
 - database4: Lock Contention
 
+### composition:
 
+- logs: database application logs of each node
+- metrics: KPIs data collected from docker
+- raft: raft logs of each node and each region
